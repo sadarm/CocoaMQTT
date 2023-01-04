@@ -47,19 +47,19 @@ open class CocoaMQTTLogger: NSObject {
         print("CocoaMQTT(\(level)): \(message)")
     }
     
-    func debug(_ message: String) {
+    open func debug(_ message: String) {
         log(level: .debug, message: message)
     }
     
-    func info(_ message: String) {
+    open func info(_ message: String) {
         log(level: .info, message: message)
     }
     
-    func warning(_ message: String) {
+    open func warning(_ message: String) {
         log(level: .warning, message: message)
     }
     
-    func error(_ message: String) {
+    open func error(_ message: String) {
         log(level: .error, message: message)
     }
     
